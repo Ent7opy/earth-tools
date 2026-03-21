@@ -9,6 +9,7 @@ describe("site pages", () => {
 
     expect(screen.getByText("Featured Tool")).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Tool Directory" })).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: /MeteoWatch EU/i })).toBeInTheDocument();
   });
 
   it("renders methods sections", () => {

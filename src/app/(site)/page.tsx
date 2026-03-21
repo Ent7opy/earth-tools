@@ -16,13 +16,13 @@ import { siteRepository } from "@/lib/data/repositories";
 import type { ToolIconName } from "@/lib/domain/types";
 
 export const metadata: Metadata = {
-  title: "Open Tools for Wildfire Awareness",
+  title: "Open Tools for Wildfire and Weather Awareness",
   description:
-    "Explore live wildfire nowcasting, transparent ecological methods, and system status insights.",
+    "Explore live wildfire nowcasting, pan-European weather warnings, transparent ecological methods, and system status insights.",
   openGraph: {
     title: "Earth Tools Home",
     description:
-      "Explore live wildfire nowcasting, transparent ecological methods, and system status insights."
+      "Explore live wildfire nowcasting, pan-European weather warnings, transparent ecological methods, and system status insights."
   }
 };
 
@@ -50,10 +50,10 @@ export default async function HomePage() {
             <h1 className="mb-6 text-4xl font-bold tracking-tight text-white md:text-6xl">
               Open Tools for <span className="text-accent">Wildfire Awareness</span>
               <br />
-              and Ecological Insight
+              and Weather Insight
             </h1>
             <p className="mx-auto mb-10 max-w-2xl text-lg font-light leading-relaxed text-text-muted md:text-xl">
-              Live satellite detections, probabilistic forecasts, and transparent environmental data tools for a
+              Live satellite detections, pan-European hazard warnings, and transparent environmental data tools for a
               changing world.
             </p>
 

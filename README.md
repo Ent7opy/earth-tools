@@ -1,6 +1,6 @@
 # Earth Tools
 
-Earth Tools is a Next.js 16 App Router application for open ecological intelligence. It provides a shared shell and route structure around external tools such as Wildfire Nowcast.
+Earth Tools is a Next.js 16 App Router application for open ecological intelligence. It provides a shared shell and route structure around external tools such as Wildfire Nowcast and MeteoWatch EU.
 
 ## Tech Stack
 
@@ -13,6 +13,7 @@ Earth Tools is a Next.js 16 App Router application for open ecological intellige
 
 - `/` - Home and tool directory
 - `/wildfire` - Embedded Wildfire Nowcast app (iframe)
+- `/meteo-watch` - Embedded MeteoWatch EU app (iframe)
 - `/methods` - Methods and transparency
 - `/status` - Pipeline and service status
 - `/api/status` - Mock system status and latest runs
@@ -31,6 +32,14 @@ NEXT_PUBLIC_WILDFIRE_NOWCAST_URL=http://localhost:8501
 ```
 
 `/wildfire` always renders the iframe when this value is set.
+
+Set the external MeteoWatch URL with:
+
+```bash
+NEXT_PUBLIC_METEO_WATCH_URL=http://localhost:5174
+```
+
+`/meteo-watch` always renders the iframe when this value is set.
 
 ## Quality Gates
 

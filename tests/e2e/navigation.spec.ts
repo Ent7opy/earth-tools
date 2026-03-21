@@ -11,12 +11,20 @@ test("navigates across primary routes", async ({ page }) => {
   await page.getByRole("navigation", { name: "Primary" }).getByRole("link", { name: "Status" }).click();
   await expect(page.getByRole("heading", { name: "System Status" })).toBeVisible();
 
-  await page.getByRole("navigation", { name: "Primary" }).getByRole("link", { name: "Wildfire Tool" }).click();
+  await page.getByRole("navigation", { name: "Primary" }).getByRole("link", { name: "Wildfire" }).click();
   if (await page.getByTestId("wildfire-iframe").count()) {
     await expect(page.getByTestId("wildfire-iframe")).toBeVisible();
   } else {
     await expect(page.getByRole("heading", { name: "Wildfire Nowcast" })).toBeVisible();
     await expect(page.getByText(/NEXT_PUBLIC_WILDFIRE_NOWCAST_URL/)).toBeVisible();
+  }
+
+  await page.getByRole("navigation", { name: "Primary" }).getByRole("link", { name: "MeteoWatch" }).click();
+  if (await page.getByTestId("meteo-watch-iframe").count()) {
+    await expect(page.getByTestId("meteo-watch-iframe")).toBeVisible();
+  } else {
+    await expect(page.getByRole("heading", { name: "MeteoWatch EU" })).toBeVisible();
+    await expect(page.getByText(/NEXT_PUBLIC_METEO_WATCH_URL/)).toBeVisible();
   }
 });
 

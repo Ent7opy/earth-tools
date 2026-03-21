@@ -8,7 +8,8 @@ import { cn } from "@/lib/utils";
 
 const navItems = [
   { label: "Home", href: "/" },
-  { label: "Wildfire Tool", href: "/wildfire" },
+  { label: "Wildfire", href: "/wildfire" },
+  { label: "MeteoWatch", href: "/meteo-watch" },
   { label: "Methods", href: "/methods" },
   { label: "Status", href: "/status" }
 ];

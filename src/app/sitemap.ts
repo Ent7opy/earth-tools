@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://earth-tools.example";
 
-  return ["", "/wildfire", "/methods", "/status"].map((path) => ({
+  return ["", "/wildfire", "/meteo-watch", "/methods", "/status"].map((path) => ({
     url: `${baseUrl}${path}`,
     lastModified: new Date(),
     changeFrequency: "daily",
