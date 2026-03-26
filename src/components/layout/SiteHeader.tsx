@@ -9,7 +9,6 @@ import { cn } from "@/lib/utils";
 const navItems = [
   { label: "Home", href: "/" },
   { label: "Wildfire", href: "/wildfire" },
-  { label: "MeteoWatch", href: "/meteo-watch" },
   { label: "Methods", href: "/methods" },
   { label: "Status", href: "/status" }
 ];
@@ -50,6 +49,9 @@ export function SiteHeader() {
             <Globe size={18} />
           </span>
           <span className="text-sm font-bold tracking-tight text-white">Earth Tools</span>
+          <span className="rounded bg-accent/20 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-accent">
+            Alpha
+          </span>
           <span className="hidden border-l border-border pl-2 text-xs text-text-muted sm:inline">
             Open Ecological Intelligence
           </span>

@@ -9,12 +9,5 @@ export const toolDirectoryData: ToolDirectoryItem[] = [
     icon: "flame",
     href: "/wildfire"
   },
-  {
-    id: "meteo-watch",
-    title: "MeteoWatch EU",
-    description: "Pan-European weather warnings aggregated from live Meteoalarm alerts.",
-    status: "live",
-    icon: "wind",
-    href: "/meteo-watch"
-  }
+
 ];
