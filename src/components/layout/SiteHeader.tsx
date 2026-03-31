@@ -77,7 +77,7 @@ export function SiteHeader() {
 
         <div className="flex items-center gap-3">
           <a
-            href="mailto:contact@earth-tools.example"
+            href="mailto:vanyoivanov98@gmail.com"
             className="hidden text-xs font-medium text-text-muted transition-colors hover:text-white sm:inline"
           >
             Contact
