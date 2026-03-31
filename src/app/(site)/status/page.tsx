@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { statusRepository } from "@/lib/data/repositories";
+
+export const dynamic = "force-dynamic";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 
 export const metadata: Metadata = {
